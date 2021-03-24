@@ -1,7 +1,7 @@
 # Личный проект «Пинк» 
 
 * Студент: [Василий Шац](https://up.htmlacademy.ru/adaptive/22/user/129688).
-* Наставник: `Неизвестно`.
+* Наставник: [Павел Нюкало](https://htmlacademy.ru/profile/nyukalopavel).
 
 ---
 
