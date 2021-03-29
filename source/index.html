@@ -15,10 +15,10 @@
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__list__item main-nav__list__item--active"><a>Главная</a></li>
-            <li class="main-nav__list__item"><a href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__list__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__list__item"><a href="#">HTML Academy</a></li>
+            <li class="main-nav__item main-nav__list__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
           </ul>
         </div>
       </nav>
@@ -28,9 +28,9 @@
       <section class="look-differently">
         <div class="look-diffently__wrapper">
           <h1 class="look-differently__header">Взгляните на жизнь иначе!</h1>
-          <button class="look-differently__button">Скачать приложение</button>
         </div>
         <div class="system-icons">
+          <button class="system-icons__button">Скачать приложение</button>
           <a class="system-icons__apple" href="#">
             <img src="img/apple-logo.svg" width="47" height="56" alt="лого для apple приложений">
           </a>
@@ -40,8 +40,8 @@
           <a class="system-icons__windows" href="#">
             <img src="img/microsoft-logo.svg" width="44" height="41" alt="лого для windows приложений">
           </a>
+          <p class="system-icons__description">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
         </div>
-        <p class="system-icons__description">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
       </section>
       <section class="features">
         <div class="features__wrapper">
@@ -50,22 +50,22 @@
           <p>Нам есть что вам<br> предоложить!</p>
           <ul class="features__list">
             <li class="features__list__item">
-              <p class="features__list__item__title">Поднимает настроение</p>
+              <h3 class="features__list__title">Поднимает настроение</h3>
               <p>Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="features__list__item">
-              <p class="features__list__item__title">Меняет мир вокруг</p>
+              <h3 class="features__list__title">Меняет мир вокруг</h3>
               <p>Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="features__list__item">
-              <p class="features__list__item__title">Заводит новых друзей</p>
+              <h3 class="features__list__title">Заводит новых друзей</h3>
               <p>Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
           <div class="features__images">
-            <img class="feature__images__item feature__images__item--hidden" src="#" alt="без фильтра">
-            <img class="feature__images__item feature__images__item--hidden" src="#" alt="просто розовый фильтр">
-            <img class="feature__images__item" src="#" alt="фильтр с надписью Всем привет">
+            <img class="feature__images-item feature__images-item--hidden" src="#" alt="без фильтра">
+            <img class="feature__images-item feature__images-item--hidden" src="#" alt="просто розовый фильтр">
+            <img class="feature__images-item" src="#" alt="фильтр с надписью Всем привет">
           </div>
           <div class="effect-description effect-description--hidden">
             <img src="#" alt="секундомер с надписью на циферблате 24">
@@ -74,63 +74,83 @@
               что положительный эффект от использования приложения длится целые сутки!</p>
               <a class="effect-description__link" href="#">Узнать больше об исследовании</a>
           </div>
+        </section>
+        <!-- секция с отзывами -->
+        <section>
+          <h2 class="visually-hidden">Отзывы пользователей</h2>
           <div class="features__slider">
-            <ul class="slider-list">
-              <li class="slider-list__item">
-                <p class="slider-list__item__user">Николай Петров</p>
-                <p class="item__user__profession">25 лет, водитель трамвая</p>
-                <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-              </li>
-              <li class="slider-list__item__hidden">
-                <p class="slider-list__item__user">Николай Николаев</p>
-                <p class="item__user__profession">25 лет, водитель трамвая</p>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, hic magnam! Quis magnam architecto culpa.</p>
-              </li>
-              <li class="slider-list__item__hidden">
-                <p class="slider-list__item__user">Николай Торгуев</p>
-                <p class="item__user__profession">25 лет, водитель трамвая</p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo voluptatem aperiam aliquam sapiente enim eos!</p>
-              </li>
-            </ul>
-              <p class="slider-controls">
-                <button class="slider-controls-button__current" type="button" aria-label="Первый слайд"></button>
-                <button class="slider-controls-button" type="button" aria-label="Второй слайд"></button>
-                <button class="slider-controls-button" type="button" aria-label="Третий слайд"></button>
-              </p>
+              <div class="slider-list"> <!--Блок коментов-->
+                <blockquote class="slider-list__item">
+                  <cite class="slider-list__user">Николай Петров</cite>
+                  <p class="slider-list__profession">25 лет, водитель трамвая</p>
+                  <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+                </blockquote>
+                <blockquote class="slider-list__item">
+                  <cite class="slider-list__user">Николай Петров</cite>
+                  <p class="slider-list__profession">25 лет, водитель трамвая</p>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque hic reprehenderit. Lorem ipsum dolor sit amet.</p>
+                </blockquote>
+                <blockquote class="slider-list__item">
+                  <cite class="slider-list__user">Николай Петров</cite>
+                  <p class="slider-list__profession">25 лет, водитель трамвая</p>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae aut iste sed, nemo ipsam ducimus minus inventore perspiciatis rem assumenda.</p>
+                </blockquote>
+              </div><!--конец блока коментов-->
 
+                <div class="slider-controls">
+                  <button class="slider-controls__button slider-controls__button--current" type="button" aria-label="Первый слайд"></button>
+                  <button class="slider-controls__button" type="button" aria-label="Второй слайд"></button>
+                  <button class="slider-controls__button" type="button" aria-label="Третий слайд"></button>
+                </div>
           </div>
-        </div>
-      </section>
+
+        </section>
+
+
+
       <section class="prices">
         <h2 class="visually-hidden">Таблица расценок</h2>
         <div class="prices__wrapper">
           <table class="prices__table">
             <thead>
               <tr>
+                <th></th>
+                <th>База<p>1,99 USD</p></th>
                 <th>Стандарт<p>3,99 USD</p></th>
+                <th>Анлим<p>9,99 USD</p></th>
               </tr>
             </thead>
             <tbody>
+
               <tr>
-                <td>Розовый фильтр<span><img src="#" alt="галочка"></span></td>
+                <td>Розовый фильтр</td>
+                <td><span><img src="#" alt="галочка"></span></td>
+                <td><span><img src="#" alt="галочка"></span></td>
+                <td><span><img src="#" alt="галочка"></span></td>
               </tr>
               <tr>
-                <td>Смайлики<span><img src="#" alt="галочка"></span></td>
+                <td>Смайлики</td>
+                <td><span><img src="#" alt="крестик"></span></td>
+                <td><span><img src="#" alt="галочка"></span></td>
+                <td><span><img src="#" alt="галочка"></span></td>
               </tr>
               <tr>
-                <td>Комментарии<span><img src="#" alt="крестик"></span></td>
+                <td>Комментарии</td>
+                <td><span><img src="#" alt="крестик"></span></td>
+                <td><span><img src="#" alt="крестик"></span></td>
+                <td><span><img src="#" alt="галочка"></span></td>
               </tr>
             </tbody>
           </table>
-          <p class="slider-controls">
-            <button class="slider-controls-button__current" type="button" aria-label="Первый слайд"></button>
-            <button class="slider-controls-button" type="button" aria-label="Второй слайд"></button>
-            <button class="slider-controls-button" type="button" aria-label="Третий слайд"></button>
-          </p>
+          <div class="slider-controls">
+            <button class="slider-controls__button slider-controls__button--current" type="button" aria-label="Первый слайд"></button>
+            <button class="slider-controls__button" type="button" aria-label="Второй слайд"></button>
+            <button class="slider-controls__button" type="button" aria-label="Третий слайд"></button>
+          </div>
         </div>
       </section>
       <section class="contact-information">
-        <h3 class="visually-hidden">Контакты</h3>
+        <h2 class="visually-hidden">Контакты</h3>
         <address class="address">
           <p>Остались вопросы?<br>Свяжитесь с нами!</p>
           <div class="address__ring">
@@ -150,6 +170,7 @@
         </address>
       </section>
       <section class="map">
+        <h2 class="visually-hidden">PINK на карте города</h2>
         <div class="map__wrapper">
           <img src="#" alt="Расположение нашей студии на карте">
         </div>
@@ -160,19 +181,22 @@
         <div class="page-footer__logo">
           <img src="#" alt="логотип компании PINK">
         </div>
+
         <div class="page-footer__social">
-          <ul class="social__list">
-            <li class="social__list__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/pink">Мы в Вконтакте</a></li>
-            <li class="social__list__item">
-              <a class="social__link social__link--facebook" href="https://facebook.com/pink">Мы в Фейсбук</a></li>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink">Мы в Вконтакте</a>
             </li>
-            <li class="social__list__item">
-              <a class="social__link social__link--facebook" href="https://youtube.com/pink">Мы в Ютубе</a></li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">Мы в Фейсбук</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--youtube" href="https://youtube.com/pink">Мы в Ютубе</a>
             </li>
           </ul>
         </div>
-        <div class="page-footer__copyright">
+
+        <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </div>
