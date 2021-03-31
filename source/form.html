@@ -35,117 +35,125 @@
       <section class="form-container">
         <h2 class="visually-hidden"></h2>
         <div class="form-container__wrapper">
-          <form class="form" action="">
+          <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__description">
               <p class="form__content">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
             </div>
 
-            <div class="full-name">
+            <div class="form__full-name full-name">
               <p class="full-name__surname">
                 <label class="full-name__label" for="form-surname">Фамилия</label>
                 <input class="full-name__input" id="form-surname" type="text" name="user-surname" placeholder="Укажите фамилию *">
               </p>
               <p class="full-name__name">
-                <label class="full-name__label" for="form-surname">Имя</label>
-                <input class="full-name__input" id="form-surname" type="text" name="user-surname" placeholder="Укажите ваше имя *">
+                <label class="full-name__label" for="form-name">Имя</label>
+                <input class="full-name__input" id="form-name" type="text" name="user-name" placeholder="Укажите ваше имя *">
               </p>
               <p class="full-name__patronymic">
-                <label class="full-name__label" for="form-surname">Отчество</label>
-                <input class="full-name__input" id="form-surname" type="text" name="user-surname" placeholder="Ну и отчество тоже *">
+                <label class="full-name__label" for="form-patronymic">Отчество</label>
+                <input class="full-name__input" id="form-patronymic" type="text" name="user-patronymic" placeholder="Ну и отчество тоже *">
               </p>
             </div>
-
-
-
-            <div class="progress">
-
-            </div>
-
-
-
-
-
-
-            <input class="search-form__content__input">
-            Рекомендуется:
-            `search-form__input` или `search-form__content-input`
-
-            Рекомендуется:
-            `search-form__button` или `search-form__content-button`
-
-
-
-
-
-
-
-
-
-            <fieldset class="features-fieldset">
-              <legend class="features-title">Особенности:</legend>
-              <ul class="feature-list">
-                <li class="feature-list-item">
-                  <label class="check" for="filter-slider">
-                    <input class="check-input" type="checkbox" name="features-slider" id="filter-slider" checked aria-label="Резиновая сетка выбрана">
-                    <span class="check-box"></span>
-                    <span>Слайдер</span>
+            <fieldset class="form__progress progress">
+              <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
+              <ul class="progress__list">
+                <li class="progress__list-item list-item">
+                  <label class="list-item__check" for="input-shark">
+                    <input class="list-item__input" type="checkbox" name="mark-shark" id="input-shark" checked aria-label="Выбрано, что сделал селфи с акулой">
+                    <span class="list-item__check-box"></span>
+                    <span>Сделал селфи с акулой</span>
                   </label>
                 </li>
-                <li class="feature-list-item">
-                  <label class="check" for="filter-advantages">
-                    <input class="check-input" type="checkbox" name="features-advantages" id="filter-advantages" aria-label="Добавить блок преимуществ">
-                    <span class="check-box"></span>
-                    <span>Блок преимуществ</span>
+                <li class="progress__list-item list-item">
+                  <label class="list-item__check" for="input-beach">
+                    <input class="list-item__input" type="checkbox" name="mark-beach" id="input-beach" checked aria-label="Выбрано, что обгорел на пляже">
+                    <span class="list-item__check-box"></span>
+                    <span>Обгорел на пляже</span>
                   </label>
                 </li>
-                <li class="feature-list-item">
-                  <label class="check" for="filter-news">
-                    <input class="check-input" type="checkbox" name="features-news" id="filter-news" checked disabled aria-label="Блок новости выбран, добавлен по-умолчанию">
-                    <span class="check-box"></span>
-                    <span class="feature-list-disabled">Новости</span>
+                <li class="progress__list-item list-item">
+                  <label class="list-item__check" for="input-chuck">
+                    <input class="list-item__input" type="checkbox" name="mark-chuck" id="input-chuck" aria-label="Видел Чака Норриса? Поставь галочку">
+                    <span class="list-item__check-box"></span>
+                    <span>Видел Чака Норриса</span>
                   </label>
                 </li>
-                <li class="feature-list-item">
-                  <label class="check" for="filter-galery">
-                    <input class="check-input" type="checkbox" name="features-galery" id="filter-galery" aria-label="Добавить галерею">
-                    <span class="check-box"></span>
-                    <span>Галерея</span>
+                <li class="progress__list-item list-item">
+                  <label class="list-item__check" for="input-souvenir">
+                    <input class="list-item__input" type="checkbox" name="mark-souvenir" id="input-souvenir" aria-label="Накупил сувениров? Поставь галочку">
+                    <span class="list-item__check-box"></span>
+                    <span>Накупил сувениров</span>
                   </label>
                 </li>
-                <li class="feature-list-item">
-                  <label class="check" for="filter-basket">
-                    <input class="check-input" type="checkbox" name="features-basket" id="filter-basket" aria-label="Добавить на сайт корзину">
-                    <span class="check-box"></span>
-                    <span>Корзина</span>
+                <li class="progress__list-item list-item">
+                  <label class="list-item__check" for="input-tower">
+                    <input class="list-item__input" type="checkbox" name="mark-tower" id="input-tower" checked aria-label="Выбрано, что удержал башню?">
+                    <span class="list-item__check-box"></span>
+                    <span>Удержал башню</span>
+                  </label>
+                </li>
+                <li class="progress__list-item list-item">
+                  <label class="list-item__check" for="input-hotel">
+                    <input class="list-item__input" type="checkbox" name="mark-hotel" id="input-hotel" aria-label="Разгромил отель? Поставь галочку">
+                    <span class="list-item__check-box"></span>
+                    <span>Разгромил отель</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            <fieldset class="form__contacts contacts">
+              <legend class="contacts__title">Контактная информация</legend>
+              <p class="contacts__phone">
+                <label class="contacts__phone-label" for="form-phone">Номер телефона</label>
+                <input class="contacts__phone-input" id="form-phone" type="tel" name="user-phone" placeholder="Номер, пожалуйста">
+              </p>
+              <p class="contacts__mail">
+                <label class="contacts__mail-label" for="form-mail">Адрес почты</label>
+                <input class="contacts__mail-input" id="form-mail" type="email" required name="user-mail" placeholder="Введите почту *">
+              </p>
+            </fieldset>
+            <fieldset class="form__applications applications">
+              <legend class="applications__title">С какими приложениями путешествовали?</legend>
+                <ul class="applications__list">
+                  <li class="applications__list-item">
+                    <label class="applications__list-label" for="application-ios">
+                      <input class="applications__list-radio" type="radio" name="radio-item" value="ios" id="application-ios" checked aria-label="Выбрано приложение Pink для iOS">
+                      <span class="applications__list-box"></span>
+                      <span>Pink для iOS</span>
+                    </label>
+                  </li>
+                  <li class="applications__list-item">
+                    <label class="applications__list-label" for="application-android">
+                      <input class="applications__list-radio" type="radio" name="radio-item" value="android" id="application-android" aria-label="Выбрать приложение Pink для Android">
+                      <span class="applications__list-box"></span>
+                      <span>Pink на Android</span>
+                    </label>
+                  </li>
+                  <li class="applications__list-item">
+                    <label class="applications__list-label" for="application-windows">
+                      <input class="applications__list-radio" type="radio" name="radio-item" value="windows" id="application-windows" aria-label="Выбрать приложение Pink для Windows Phone">
+                      <span class="applications__list-box"></span>
+                      <span>Windows Phone</span>
+                    </label>
+                  </li>
+            </fieldset>
+            <fieldset class="form__emotions emotions">
+              <legend class="emotions__title">Опишите свои эмоции</legend>
+              <p class="emotions__description">
+                <label class="emotions__label visually-hidden" for="description-content">Текст письма:</label>
+                <textarea class="emotions__textarea" rows="4" cols="30" name="user-description" id="description-content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+              </p>
+            </fieldset>
+            <div class="form__button">
+              <button class="form__button-item" type="submit">Отправить форму</button>
+              <p class="form__button-description">* - Обязательные для заполнения поля</p>
+            </div>
           </form>
         </div>
       </section>
-
-
-
-
-
-
-
     </main>
+
+
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
@@ -172,5 +180,25 @@
         </div>
       </div>
     </footer>
+
+
+    <section class="modal modal-error">
+      <div class="modal-error__wrapper">
+        <h2 class="modal-error__header">Что-то пошло не так!</h2>
+        <p class="modal-error__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-error__close" type="button" aria-label="Закрыть">ОК</button>
+      </div>
+    </section>
+
+    <section class="modal modal-success">
+      <div class="modal-success__wrapper">
+        <h2 class="modal-success__header">Что-то пошло не так!</h2>
+        <p class="modal-success__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+        <button class="modal-success__close" type="button" aria-label="Закрыть">Закрыть окно</button>
+      </div>
+    </section>
+
+
+    <script src=""></script>
   </body>
 </html>
