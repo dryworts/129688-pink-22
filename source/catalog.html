@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Пинк</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header header-catalog" style="background-image: url(img/back-desktop.jpg);">
+      <a class="page-header__logo">
+        <img class="page-header__logo-image" src="img/logotype-white-desktop.svg" width="147" height="40" alt="PINK">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+          </ul>
+        </div>
+      </nav>
+      <section class="photo-description">
+        <div class="photo-description__block photo-description__wrapper">
+          <h1 class="visually-hidden">Фотографии пользователей</h1>
+          <p class="photo-description__content"></p>
+        </div>
+      </section>
+    </header>
+
+
+
+    <main class="page-catalog">
+      <section class="photo-of-day">
+        <h2 class="visually-hidden">Фото дня</h2>
+        <div class="photo-of-day__wrapper">
+          <span>Панорама дня</span>
+        </div>
+        <div class="photo-of-day">
+          <img src="" alt="Главное фото дня"> <!--фокта будет выпадать из контейнера-->
+        </div>
+        <div class="photo-of-day__wrapper">
+          <blockquote class="photo-of-day__day-block day-block">
+             <cite class="day-block__name">Анна<span class="user-block__time">(5 минут назад)</span></cite>
+              <p class="day-block__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="day-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">215</span></p>
+          </blockquote>
+        </div>
+      </section>
+
+      <section class="custom-photos">
+        <h2 class="visually-hidden">Альбом пользовательских фотографий</h2>
+        <ul class="custom-photos__list">
+          <li class="custom-photos__item">
+            <img src="" alt="Фотография камеры на подставке на переднем плане и белого автомобиля на заднем">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Левон<span class="user-block__time">(5 часов назад)</span></cite>
+              <p class="user-block__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">356</span></p>
+            </blockquote>
+          </li>
+          <li class="custom-photos__item">
+            <img src="" alt="Фотография барабанной установки.">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Антон<span class="user-block__time">(12 часов назад)</span></cite>
+              <p class="user-block__description">Соседи будут рады!</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">777</span></p>
+            </blockquote>
+          </li>
+          <li class="custom-photos__item">
+            <img src="" alt="Вид на небоскеб снизу.">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Борис<span class="user-block__time">(20 часов назад)</span></cite>
+              <p class="user-block__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">215</span></p>
+            </blockquote>
+          </li>
+          <li class="custom-photos__item">
+            <img src="" alt="Кубанская бахча.">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Сергейс<span class="user-block__time">(25 часов назад)</span></cite>
+              <p class="user-block__description">Самая кубанская в мире!</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">4</span></p>
+            </blockquote>
+          </li>
+          <li class="custom-photos__item">
+            <img src="" alt="Вид с обрыва сверху вниз.">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Максим<span class="user-block__time">(40 часов назад)</span></cite>
+              <p class="user-block__description">Где снег-то?</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">150</span></p>
+            </blockquote>
+          </li>
+          <li class="custom-photos__item">
+            <img src="" alt="Вид на крыло самолета">
+            <blockquote class="custom-photos__block user-block">
+              <cite class="user-block__name">Всем GM и взаимные лайки!<span class="user-block__time">(45 часов назад)</span></cite>
+              <p class="user-block__description">Где снег-то?</p>
+              <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">2560</span></p>
+            </blockquote>
+          </li>
+        </ul>
+      </section>
+      <section class="post-photo">
+        <div class="post-photo__wrapper">
+          <h2 class="visually-hidden">Разместите ваше фото здесь</h2>
+          <p class="post-photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+          <img class="post-photo__image" src="" alt="Образец фото">
+          <div class="post-photo__customization customization">
+            <span class="customization__item cut-tool">обрезать</span>
+            <span class="customization__item color-tool">цвет</span>
+            <span class="customization__item brightness-tool">яркость</span>
+            <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
+            <button class="customization__button customization__button--send" type="button" aria-label="Отправить">Запостить</button>
+            <button class="customization__button  customization__button--cancel" type="button" aria-label="Отменить">Отмена</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__logo">
+          <img src="#" alt="Логотип компании PINK">
+        </div>
+
+        <div class="page-footer__social">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink">Мы в Вконтакте</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">Мы в Фейсбук</a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link social-list__link--youtube" href="https://youtube.com/pink">Мы в Ютубе</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__copyright copyright">
+          <b class="copyright__text">Разработано:</b>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+  </body>
+</html>
