@@ -3,14 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
 
-    <header class="page-header header-index" style="background-image: url(img/back-desktop.jpg);">
+    <header class="page-header header-index")>
 
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-white-desktop.svg" width="147" height="40" alt="PINK">
+        <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="PINK">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -51,8 +52,8 @@
       <section class="features">
         <div class="features__wrapper">
           <h2 class="visually-hidden">Особенности приложения PINK </h2>
-          <p>Устали от серости мегаполиса?</p>
-          <p>Нам есть что вам<br> предоложить!</p>
+          <p class="features__content">Устали от серости мегаполиса?</p>
+          <p class="features__content">Нам есть что вам<br> предоложить!</p>
           <ul class="features-list">
             <li class="features-list__item">
               <h3 class="features-list__title">Поднимает настроение</h3>
@@ -68,9 +69,9 @@
             </li>
           </ul>
           <div class="features__images">
-            <img class="feature__images-item feature__images-item--hidden" src="#" alt="без фильтра">
-            <img class="feature__images-item feature__images-item--hidden" src="#" alt="просто розовый фильтр">
-            <img class="feature__images-item" src="#" alt="фильтр с надписью Всем привет">
+            <img class="feature__images-item feature__images-item--hidden" src="img/mobile-smile-mobile.png" height="320" width="157" alt="без фильтра">
+            <img class="feature__images-item feature__images-item--hidden" src="img/mobile-smile-mobile.png" height="320" width="157" alt="просто розовый фильтр">
+            <img class="feature__images-item" src="img/mobile-smile-mobile.png" height="320" width="157" alt="фильтр с надписью Всем привет">
           </div>
           <div class="effect-description effect-description--hidden">
             <img src="#" alt="секундомер с надписью на циферблате 24">
@@ -88,15 +89,15 @@
             <div class="reviews-list"> <!--Блок коментов-->
               <blockquote class="reviews-list__item">
                 <cite class="reviews-list__user">Николай Петров</cite>
-                <p class="reviews-list__profession">25 лет, водитель трамвая</p>
+                <p class="reviews-list__profession reviews-list__profession--hidden">25 лет, водитель трамвая</p>
                 <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </blockquote>
-              <blockquote class="reviews-list__item">
+              <blockquote class="reviews-list__item reviews-list__item--hidden">
                 <cite class="reviews-list__user">Николай Петров</cite>
                 <p class="reviews-list__profession">25 лет, водитель трамвая</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis doloremque hic reprehenderit. Lorem ipsum dolor sit amet.</p>
               </blockquote>
-              <blockquote class="reviews-list__item">
+              <blockquote class="reviews-list__item reviews-list__item--hidden">
                 <cite class="reviews-list__user">Николай Петров</cite>
                 <p class="reviews-list__profession">25 лет, водитель трамвая</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae aut iste sed, nemo ipsam ducimus minus inventore perspiciatis rem assumenda.</p>
@@ -120,31 +121,31 @@
           <table class="prices__table">
             <thead>
               <tr>
-                <th></th>
-                <th>База<p>1,99 USD</p></th>
-                <th>Стандарт<p>3,99 USD</p></th>
-                <th>Анлим<p>9,99 USD</p></th>
+                <th class="hidden-cell"></th>
+                <th class="prices__table-title hidden-cell">База<p>1,99 USD</p></th>
+                <th class="prices__table-title">Стандарт<p>3,99 USD</p></th>
+                <th class="prices__table-title hidden-cell">Анлим<p>9,99 USD</p></th>
               </tr>
             </thead>
             <tbody>
 
               <tr>
                 <td>Розовый фильтр</td>
-                <td><span><img src="#" alt="галочка"></span></td>
-                <td><span><img src="#" alt="галочка"></span></td>
-                <td><span><img src="#" alt="галочка"></span></td>
+                <td class="hidden-cell"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="hidden-cell"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
               </tr>
               <tr>
                 <td>Смайлики</td>
-                <td><span><img src="#" alt="крестик"></span></td>
-                <td><span><img src="#" alt="галочка"></span></td>
-                <td><span><img src="#" alt="галочка"></span></td>
+                <td class="hidden-cell"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
+                <td class="hidden-cell"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
               </tr>
               <tr>
                 <td>Комментарии</td>
-                <td><span><img src="#" alt="крестик"></span></td>
-                <td><span><img src="#" alt="крестик"></span></td>
-                <td><span><img src="#" alt="галочка"></span></td>
+                <td class="hidden-cell"><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td><span><img src="img/no.svg" width="27" height="27" alt="крестик"></span></td>
+                <td class="hidden-cell"><span><img src="img/yes.svg" width="31" height="21" alt="галочка"></span></td>
               </tr>
             </tbody>
           </table>
@@ -171,30 +172,42 @@
 
           <div class="address__postal">
             <p>Пишите:</p>
-            <p class="address__post-address">ул. Большая Конюшенная, 19/8</p>
+            <span class="address__post-address">ул. Большая Конюшенная, 19/8</span>
           </div>
         </address>
       </section>
       <section class="map">
         <h2 class="visually-hidden">PINK на карте города</h2>
         <div class="map__wrapper">
-          <img src="#" alt="Расположение нашей студии на карте">
+          <img src="img/map-mobile.jpg" width="320" height="200" alt="Расположение нашей студии на карте">
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="#" alt="логотип компании PINK">
+          <img src="img/logotype-blue-tablet.svg" width="145" height="40" alt="логотип компании PINK">
         </div>
 
         <div class="page-footer__social">
           <ul class="social-list">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink">Мы в Вконтакте</a>
+              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink"><span class="visually-hidden">Вконтакте</span>
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
+                  </svg>
+              </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">Мы в Фейсбук</a>
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">
+                <span class="visually-hidden">Фейсбук</span>
+                <span class="social-ellipse">
+                  <svg class="social-ellipse-item" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.50865 3.19324H9V0H6.02076C2.76125 0.171067 1.59862 2.27138 2.07612 5.81626H0V9.15206H2.07612V18H6.02076V9.15206H8.97924V5.81626H6.01038C5.98962 4.81837 5.96886 3.52587 6.50865 3.19324Z" fill="#D22856"/>
+                    </svg>
+                </span>
+              </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link social-list__link--youtube" href="https://youtube.com/pink">Мы в Ютубе</a>
@@ -204,7 +217,7 @@
 
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
         </div>
       </div>
     </footer>

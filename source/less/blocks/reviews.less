@@ -1,0 +1,30 @@
+.reviews {
+  outline: 3px solid rgba(255, 0, 0, 0.5);
+  outline-offset: -3px;
+}
+
+.reviews-list__item {
+  margin-top: 0;
+}
+
+
+.reviews-list__user {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+}
+.reviews-list__item--hidden,
+.reviews-list__profession--hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
