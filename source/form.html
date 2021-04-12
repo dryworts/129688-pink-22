@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -40,7 +41,7 @@
         <div class="form-container__wrapper">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
             <div class="form__description">
-              <p class="form__content">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
+              <p class="form__content">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p><p class="form__content form__content--hidden">Пожалуйста, заполните форму ниже:</p>
             </div>
 
             <fieldset class="form__full-name full-name">
@@ -66,42 +67,42 @@
                   <label class="list-item__check" for="input-shark">
                     <input class="list-item__input" type="checkbox" name="mark-shark" id="input-shark" checked aria-label="Выбрано, что сделал селфи с акулой">
                     <span class="list-item__check-box"></span>
-                    <span>Сделал селфи с акулой</span>
+                    <span class="list-item__description">Сделал селфи с акулой</span>
                   </label>
                 </li>
                 <li class="progress__list-item list-item">
                   <label class="list-item__check" for="input-beach">
                     <input class="list-item__input" type="checkbox" name="mark-beach" id="input-beach" checked aria-label="Выбрано, что обгорел на пляже">
                     <span class="list-item__check-box"></span>
-                    <span>Обгорел на пляже</span>
+                    <span class="list-item__description">Обгорел на пляже</span>
                   </label>
                 </li>
                 <li class="progress__list-item list-item">
                   <label class="list-item__check" for="input-chuck">
                     <input class="list-item__input" type="checkbox" name="mark-chuck" id="input-chuck" aria-label="Видел Чака Норриса? Поставь галочку">
                     <span class="list-item__check-box"></span>
-                    <span>Видел Чака Норриса</span>
+                    <span class="list-item__description">Видел Чака Норриса</span>
                   </label>
                 </li>
                 <li class="progress__list-item list-item">
                   <label class="list-item__check" for="input-souvenir">
                     <input class="list-item__input" type="checkbox" name="mark-souvenir" id="input-souvenir" aria-label="Накупил сувениров? Поставь галочку">
                     <span class="list-item__check-box"></span>
-                    <span>Накупил сувениров</span>
+                    <span class="list-item__description">Накупил сувениров</span>
                   </label>
                 </li>
                 <li class="progress__list-item list-item">
                   <label class="list-item__check" for="input-tower">
                     <input class="list-item__input" type="checkbox" name="mark-tower" id="input-tower" checked aria-label="Выбрано, что удержал башню?">
                     <span class="list-item__check-box"></span>
-                    <span>Удержал башню</span>
+                    <span class="list-item__description">Удержал башню</span>
                   </label>
                 </li>
                 <li class="progress__list-item list-item">
                   <label class="list-item__check" for="input-hotel">
                     <input class="list-item__input" type="checkbox" name="mark-hotel" id="input-hotel" aria-label="Разгромил отель? Поставь галочку">
                     <span class="list-item__check-box"></span>
-                    <span>Разгромил отель</span>
+                    <span class="list-item__description">Разгромил отель</span>
                   </label>
                 </li>
               </ul>
@@ -124,35 +125,35 @@
                     <label class="applications__list-label" for="application-ios">
                       <input class="applications__list-radio" type="radio" name="radio-item" value="ios" id="application-ios" checked aria-label="Выбрано приложение Pink для iOS">
                       <span class="applications__list-box"></span>
-                      <span>Pink для iOS</span>
+                      <span class="applications__list-description">Pink для iOS</span>
                     </label>
                   </li>
                   <li class="applications__list-item">
                     <label class="applications__list-label" for="application-android">
                       <input class="applications__list-radio" type="radio" name="radio-item" value="android" id="application-android" aria-label="Выбрать приложение Pink для Android">
                       <span class="applications__list-box"></span>
-                      <span>Pink на Android</span>
+                      <span class="applications__list-description">Pink на Android</span>
                     </label>
                   </li>
                   <li class="applications__list-item">
                     <label class="applications__list-label" for="application-windows">
                       <input class="applications__list-radio" type="radio" name="radio-item" value="windows" id="application-windows" aria-label="Выбрать приложение Pink для Windows Phone">
                       <span class="applications__list-box"></span>
-                      <span>Windows Phone</span>
+                      <span class="applications__list-description">Windows Phone</span>
                     </label>
                   </li>
                 </ul>
             </fieldset>
             <fieldset class="form__emotions emotions">
               <legend class="emotions__title">Опишите свои эмоции</legend>
-              <p class="emotions__description">
+              <div class="emotions__description">
                 <label class="emotions__label visually-hidden" for="description-content">Текст письма:</label>
                 <textarea class="emotions__textarea" rows="4" cols="30" name="user-description" id="description-content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
-              </p>
+              </div>
             </fieldset>
             <div class="form__button">
               <button class="form__button-item" type="submit">Отправить форму</button>
-              <p class="form__button-description">* - Обязательные для заполнения поля</p>
+              <p class="form__button-description"><span class="form__button-pinkish">*</span> - Обязательные для заполнения поля</p>
             </div>
           </form>
         </div>
@@ -163,16 +164,28 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="#" alt="логотип компании PINK">
+          <img src="img/logotype-blue-tablet.svg" width="145" height="40" alt="логотип компании PINK">
         </div>
 
         <div class="page-footer__social">
           <ul class="social-list">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink">Мы в Вконтакте</a>
+              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink"><span class="visually-hidden">Вконтакте</span>
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
+                  </svg>
+              </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">Мы в Фейсбук</a>
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">
+                <span class="visually-hidden">Фейсбук</span>
+                <span class="social-ellipse">
+                  <svg class="social-ellipse-item" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.50865 3.19324H9V0H6.02076C2.76125 0.171067 1.59862 2.27138 2.07612 5.81626H0V9.15206H2.07612V18H6.02076V9.15206H8.97924V5.81626H6.01038C5.98962 4.81837 5.96886 3.52587 6.50865 3.19324Z" fill="#D22856"/>
+                    </svg>
+                </span>
+              </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link social-list__link--youtube" href="https://youtube.com/pink">Мы в Ютубе</a>
@@ -182,7 +195,7 @@
 
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
         </div>
       </div>
     </footer>
