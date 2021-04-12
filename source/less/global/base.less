@@ -1,6 +1,6 @@
 body {
   min-height: 100%;
-  width: 320px;
+  min-width: 320px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
@@ -8,17 +8,20 @@ body {
   color: @basic-font;
   background-color: @white;
   margin: 0;
-
 }
 
 img {
   max-width: 100%;
   height: auto;
 }
+
 a {
   text-decoration: none;
 }
-*, *::before, *::after {
+
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -33,6 +36,4 @@ a {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-
 }
-
