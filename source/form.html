@@ -8,9 +8,10 @@
   <body class="page__body">
 
 
-    <header class="page-header header-form" style="background-image: url(img/back-desktop.jpg);">
+    <header class="page-header header-index">
+
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-white-desktop.svg" width="147" height="40" alt="PINK">
+        <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="PINK">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -25,17 +26,28 @@
           </ul>
         </div>
       </nav>
-      <section class="competition">
-        <div class="competition__wrapper">
-          <h1 class="competition__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+
+      <section class="look-differently">
+        <div class="look-differently__wrapper">
+          <h1 class="look-differently__header">Взгляните на жизнь иначе!</h1>
+        </div>
+        <div class="system-icons">
+          <button class="system-icons__button">Скачать приложение</button>
+          <a class="system-icons__apple" href="#">
+            <img src="img/apple-logo.svg" width="47" height="56" alt="лого для apple приложений">
+          </a>
+          <a class="system-icons__android" href="#">
+            <img src="img/android-logo.svg" width="43" height="47" alt="лого для android приложений">
+          </a>
+          <a class="system-icons__windows" href="#">
+            <img src="img/microsoft-logo.svg" width="44" height="41" alt="лого для windows приложений">
+          </a>
+          <p class="system-icons__description">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
     </header>
 
-    <main class="page-catalog">
-
-
-
+    <main class="page-form">
       <section class="form-container">
         <h2 class="visually-hidden">Форма</h2>
         <div class="form-container__wrapper">
@@ -180,8 +192,8 @@
             <li class="social-list__item">
               <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">
                 <span class="visually-hidden">Фейсбук</span>
-                <span class="social-ellipse">
-                  <svg class="social-ellipse-item" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <span class="social-list__ellipse">
+                  <svg class="social-list__ellipse-item" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M6.50865 3.19324H9V0H6.02076C2.76125 0.171067 1.59862 2.27138 2.07612 5.81626H0V9.15206H2.07612V18H6.02076V9.15206H8.97924V5.81626H6.01038C5.98962 4.81837 5.96886 3.52587 6.50865 3.19324Z" fill="#D22856"/>
                     </svg>
                 </span>
@@ -204,14 +216,14 @@
     <section class="modal">
         <h2 class="modal__header">Что-то пошло не так!</h2>
         <p class="modal__content">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="modal__close" type="button" aria-label="Закрыть">ОК</button>
+        <button class="modal__close modal__close--ok" type="button" aria-label="Закрыть">ОК</button>
     </section>
 
 
     <section class="modal">
         <h2 class="modal__header">Ваша заявка отправлена</h2>
         <p class="modal__content">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-        <button class="modal__close" type="button" aria-label="Закрыть">Закрыть окно</button>
+        <button class="modal__close modal__close--shut-down" type="button" aria-label="Закрыть">Закрыть окно</button>
     </section>
 
     <script src="insert-any.js"></script>
