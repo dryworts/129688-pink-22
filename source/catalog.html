@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="page-header header-catalog" style="background-image: url(img/back-desktop.jpg);">
+
+    <header class="page-header header-catalog">
+
       <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/logotype-white-desktop.svg" width="147" height="40" alt="PINK">
+        <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="PINK">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -23,27 +26,30 @@
         </div>
       </nav>
       <section class="photo-description">
-        <div class="photo-description__block photo-description__wrapper">
-          <h1 class="visually-hidden">Фотографии пользователей</h1>
-          <p class="photo-description__content"></p>
+        <div class="photo-description__block">
+          <h1 class="photo-description__title">Фотографии пользователей</h1>
         </div>
       </section>
     </header>
 
 
-
     <main class="page-catalog">
+      <section class="invitation">
+        <h2 class="visually-hidden">Заголовок блока-приглашения</h2>
+        <p class="invitation__content">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      </section>
+
       <section class="photo-of-day">
         <h2 class="visually-hidden">Фото дня</h2>
         <div class="photo-of-day__wrapper">
-          <span>Панорама дня</span>
+          <span class="photo-of-day__header">Панорама дня</span>
         </div>
 
-          <img class="photo-of-day__image" src="#" alt="Главное фото дня"> <!--фокта будет выпадать из контейнера-->
+          <img class="photo-of-day__image" src="img/panorama-mobile.jpg" width="320" height="137" alt="Главное фото дня"> <!--фокта будет выпадать из контейнера-->
 
         <div class="photo-of-day__wrapper">
           <blockquote class="photo-of-day__day-block day-block">
-            <cite class="day-block__name">Анна<span class="day-block__time">(5 минут назад)</span></cite>
+            <cite class="day-block__name">Анна<span class="day-block__time"> (5 минут назад)</span></cite>
             <p class="day-block__description">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
             <p class="day-block__like"><span class="day-block__icon"></span>нравится:<span class="day-block__count">215</span></p>
           </blockquote>
@@ -54,31 +60,31 @@
         <h2 class="visually-hidden">Альбом пользовательских фотографий</h2>
         <ul class="custom-photos__list">
           <li class="custom-photos__item">
-            <img src="#" alt="Фотография камеры на подставке на переднем плане и белого автомобиля на заднем">
+            <img src="img/photo-1-mobile.jpg" width="280" height="180" alt="Фотография камеры на подставке на переднем плане и белого автомобиля на заднем">
             <blockquote class="custom-photos__block user-block">
-              <cite class="user-block__name">Левон<span class="user-block__time">(5 часов назад)</span></cite>
+              <cite class="user-block__name">Левон<span class="user-block__time"> (5 часов назад)</span></cite>
               <p class="user-block__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">356</span></p>
             </blockquote>
           </li>
           <li class="custom-photos__item">
-            <img src="#" alt="Фотография барабанной установки.">
+            <img src="img/photo-2-mobile.jpg" width="280" height="180" alt="Фотография барабанной установки.">
             <blockquote class="custom-photos__block user-block">
-              <cite class="user-block__name">Антон<span class="user-block__time">(12 часов назад)</span></cite>
+              <cite class="user-block__name">Антон<span class="user-block__time"> (12 часов назад)</span></cite>
               <p class="user-block__description">Соседи будут рады!</p>
               <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">777</span></p>
             </blockquote>
           </li>
           <li class="custom-photos__item">
-            <img src="#" alt="Вид на небоскеб снизу.">
+            <img src="img/photo-3-mobile.jpg" width="280" height="180" alt="Вид на небоскеб снизу.">
             <blockquote class="custom-photos__block user-block">
-              <cite class="user-block__name">Борис<span class="user-block__time">(20 часов назад)</span></cite>
+              <cite class="user-block__name">Борис<span class="user-block__time"> (20 часов назад)</span></cite>
               <p class="user-block__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <p class="user-block__like"><span class="user-block__icon"></span>нравится:<span class="user-block__count">215</span></p>
             </blockquote>
           </li>
           <li class="custom-photos__item">
-            <img src="#" alt="Кубанская бахча.">
+            <img src="img/photo-4-mobile.jpg" width="280" height="180" alt="Кубанская бахча.">
             <blockquote class="custom-photos__block user-block">
               <cite class="user-block__name">Сергейс<span class="user-block__time">(25 часов назад)</span></cite>
               <p class="user-block__description">Самая кубанская в мире!</p>
@@ -86,7 +92,7 @@
             </blockquote>
           </li>
           <li class="custom-photos__item">
-            <img src="#" alt="Вид с обрыва сверху вниз.">
+            <img src="img/photo-5-mobile.jpg" width="280" height="180" alt="Вид с обрыва сверху вниз.">
             <blockquote class="custom-photos__block user-block">
               <cite class="user-block__name">Максим<span class="user-block__time">(40 часов назад)</span></cite>
               <p class="user-block__description">Где снег-то?</p>
@@ -94,7 +100,7 @@
             </blockquote>
           </li>
           <li class="custom-photos__item">
-            <img src="#" alt="Вид на крыло самолета">
+            <img src="img/photo-6-mobile.jpg" width="280" height="180" alt="Вид на крыло самолета">
             <blockquote class="custom-photos__block user-block">
               <cite class="user-block__name">Всем GM и взаимные лайки!<span class="user-block__time">(45 часов назад)</span></cite>
               <p class="user-block__description">Где снег-то?</p>
@@ -107,11 +113,17 @@
         <div class="post-photo__wrapper">
           <h2 class="visually-hidden">Разместите ваше фото здесь</h2>
           <p class="post-photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
-          <img class="post-photo__image" src="#" alt="Образец фото">
+          <img class="post-photo__image" src="img/photo-7-mobile.jpg" width="280" height="374" alt="Образец фото">
           <div class="post-photo__customization customization">
-            <span class="customization__item cut-tool">обрезать</span>
-            <span class="customization__item color-tool">цвет</span>
-            <span class="customization__item brightness-tool">яркость</span>
+            <span class="customization__item cut-tool">
+              <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
+            </span>
+            <span class="customization__item color-tool">
+              <img src="img/fill.svg" width="44" height="44" alt="функция наполнить цветом">
+            </span>
+            <span class="customization__item brightness-tool">
+              <img src="img/contrast.svg" width="44" height="44" alt="функция установить яркость">
+            </span>
             <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
             <button class="customization__button customization__button--send" type="button" aria-label="Отправить">Запостить</button>
             <button class="customization__button  customization__button--cancel" type="button" aria-label="Отменить">Отмена</button>
@@ -122,16 +134,28 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__logo">
-          <img src="#" alt="Логотип компании PINK">
+          <img src="img/logotype-blue-tablet.svg" width="145" height="40" alt="логотип компании PINK">
         </div>
 
         <div class="page-footer__social">
           <ul class="social-list">
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink">Мы в Вконтакте</a>
+              <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/pink"><span class="visually-hidden">Вконтакте</span>
+                <svg width="54" height="54" viewBox="0 0 54 54" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle opacity="0.1" cx="27" cy="27" r="25.5" fill="white" stroke="#283645" stroke-width="3"/>
+                  <path d="M29.5641 20.1689C30.2458 19.9538 30.9837 19.9439 31.6719 20.1405C32.3602 20.3371 32.9633 20.7301 33.3947 21.2632C34.1053 21.0538 34.8055 20.816 35.5263 20.6066C35.5164 20.9258 35.4299 21.2391 35.2732 21.5237C35.1165 21.8084 34.8935 22.0574 34.6201 22.2528C34.8726 22.2788 35.1281 22.2511 35.3673 22.172C35.6064 22.0928 35.8228 21.9642 36 21.7961C35.901 22.2099 35.6999 22.597 35.4123 22.9271C35.1247 23.2572 34.7585 23.5214 34.3421 23.6992C34.095 29.9699 30.9748 34.1662 23.6533 33.9949H23.1487C22.7059 33.9949 18.7311 33.5667 18 32.2441C19.752 32.4899 21.5389 32.0976 22.984 31.1498C21.9542 30.8643 20.1316 30.7026 19.8227 28.4093C20.2108 28.5434 20.6321 28.5731 21.0378 28.495C19.7609 27.7052 18.3398 27.0391 18.4222 24.9933C18.8196 25.2988 19.3269 25.4551 19.8432 25.431C19.1018 25.2026 17.7529 22.3099 18.8959 20.8255C20.8215 22.5478 22.8604 24.1749 26.4851 24.3367C26.7117 22.2052 27.6899 20.7779 29.5641 20.1689Z" fill="#D22856"/>
+                  </svg>
+              </a>
             </li>
             <li class="social-list__item">
-              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">Мы в Фейсбук</a>
+              <a class="social-list__link social-list__link--facebook" href="https://facebook.com/pink">
+                <span class="visually-hidden">Фейсбук</span>
+                <span class="social-list__ellipse">
+                  <svg class="social-list__ellipse-item" width="9" height="18" viewBox="0 0 9 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.50865 3.19324H9V0H6.02076C2.76125 0.171067 1.59862 2.27138 2.07612 5.81626H0V9.15206H2.07612V18H6.02076V9.15206H8.97924V5.81626H6.01038C5.98962 4.81837 5.96886 3.52587 6.50865 3.19324Z" fill="#D22856"/>
+                    </svg>
+                </span>
+              </a>
             </li>
             <li class="social-list__item">
               <a class="social-list__link social-list__link--youtube" href="https://youtube.com/pink">Мы в Ютубе</a>
@@ -141,7 +165,7 @@
 
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/html-academy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
         </div>
       </div>
     </footer>
