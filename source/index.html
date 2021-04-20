@@ -2,30 +2,60 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
 
+
     <header class="page-header header-index">
 
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="PINK">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+      <div class="page-header__wrapper"><!--центровщик-->
+
+      <!--page-header__logo-container--opened класс для первой строки меню-->
+      <!-- должен присваиватья с помощью js -->
+      <div class="page-header__logo-container page-header__logo-container--opened">
+        <a class="page-header__logo">
+          <img class="page-header__logo-magic" src="img/logotype-white-desktop.svg" width="145" height="40" alt="PINK">
+          <img class="page-header__logo-glass" src="img/logotype-white-tablet.svg" width="145" height="40" alt="PINK">
+          <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="PINK">
+        </a>
+
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
+              <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
+              <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
+              <li class="main-nav__item"><a href="#">HTML Academy</a></li>
+            </ul>
+          </div>
+        </nav>
+
+        <button class="main-nav__toggle main-nav__toggle--activated" type="button" aria-label="Открыть меню">
         </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
+        <!-- при нажатой main-nav__toggle--activated убираем у main-nav__close visually-hidden -->
+        <button class="main-nav__close" type="button" aria-label="Закрыть меню"></button>
+
+
+
+
+
+
+
+      </div><!--page-header__logo-container-->
+
+
+
+
+
+
+
+
+
+
 
       <section class="look-differently">
         <div class="look-differently__wrapper">
@@ -45,6 +75,8 @@
           <p class="system-icons__description">Доступно для iPhone, iPad, Android,<br>Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
+    </div> <!--конец центровщика-->
+
     </header>
 
 
