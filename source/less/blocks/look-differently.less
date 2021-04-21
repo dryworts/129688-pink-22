@@ -1,5 +1,40 @@
+@media (min-width: @tablet-width) {
+  .look-differently {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-height: 97px;
+  }
+}
+
+// @media (min-width: @desktop-width) {
+//   .look-differently {
+//     display: none;
+//   }
+// }
+
 .look-differently__header {
   font-weight: 300;
   line-height: 29px;
+  font-size: 24px;
   text-align: center;
+  color: white;
+}
+
+.look-differently__hand-container {
+  background-image: url("/img/hand-mobile.png");
+  min-height: 286px;
+  background-repeat: no-repeat;
+}
+
+@media (min-width: @tablet-width) {
+  .look-differently__hand-container {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .look-differently__hand-container {
+    display: none;
+  }
 }
