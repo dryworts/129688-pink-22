@@ -10,3 +10,46 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+@media (min-width: @tablet-width) {
+  .effect-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: url("/img/clock-tablet.png");
+    background-repeat: no-repeat;
+    min-height: 330px;
+  }
+
+  .effect-description__container-right {
+    align-self: flex-end;
+    width: 310px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect-description {
+
+    background-image: url("/img/clock-desktop.png");
+    background-repeat: no-repeat;
+    min-height: 429px;
+  }
+
+  .effect-description__container-right {
+    align-self: flex-end;
+    width: 570px;
+  }
+
+  .effect-description__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .effect-description {
+    display: none;
+  }
+}

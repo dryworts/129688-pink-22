@@ -2,3 +2,132 @@
   outline: 3px solid rgba(0, 0, 255, 0.5);
   outline-offset: -3px;
 }
+
+.contact-information__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+.contact-information__questions {
+  text-align: center;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .contact-information__wrapper {
+    width: 660px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contact-information__wrapper {
+    width: 1200px;
+    padding: 0 130px;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .address__ring {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .address__write {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .address__postal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .contact-information__questions {
+    text-align: center;
+    font-weight: 300;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .address__ring {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    order: 1;
+  }
+
+  .address__write {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    order: 2;
+  }
+
+  .address__postal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    order: 3;
+  }
+
+  .contact-information__questions {
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 54px;
+  }
+}

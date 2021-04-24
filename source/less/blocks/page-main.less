@@ -1,3 +1,26 @@
 .page-main {
   //
 }
+
+
+.page-main__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 1px solid red;
+  outline-offset: -1px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-main__wrapper {
+    width: 660px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__wrapper {
+    width: 1200px;
+    padding: 0 130px;
+  }
+}

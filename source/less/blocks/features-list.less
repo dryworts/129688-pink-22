@@ -17,3 +17,56 @@
 .features-list p {
   text-align: center;
 }
+
+
+@media (min-width: @desktop-width) {
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .features-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+}
+
+
+@media (min-width: @tablet-width) and (max-width: @desktop-width) {
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    // width: 310px;
+    background-image: url("/img/phone-tablet.png");
+    background-repeat: no-repeat;
+  }
+
+  .features-list__item {
+    align-self: flex-end;
+    width: 310px;
+  }
+}
+
+@media (max-width: @desktop-width) {
+  .features-list__images-item {
+    display: none;
+  }
+}
+
+@media (max-width: @mobile-width-only) {
+  .features-list::after {
+    content: "";
+    width: auto;
+    height: 286px;
+    background: transparent;
+    background-image: url("/img/phone-mobile.png");
+    display: block;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+  }
+}
+

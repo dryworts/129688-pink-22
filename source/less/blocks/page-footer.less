@@ -1,8 +1,48 @@
 .page-footer {
   margin: 0;
   padding: 0;
-
-
   outline: 3px solid rgba(255, 0, 255, 0.5);
   outline-offset: -3px;
+}
+
+.page-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 1px solid red;
+  outline-offset: -1px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  min-height: 284px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    width: 660px;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    min-height: 188px;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    width: 1200px;
+    padding: 0 130px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 141px;
+  }
+}
+
+.social-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
