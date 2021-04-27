@@ -3,6 +3,12 @@
   outline-offset: -3px;
 }
 
+@media (max-width: @mobile-width-only) {
+  .prices__hidden-cell {
+    display: none;
+  }
+}
+
 .prices__table {
   font-style: normal;
   font-weight: normal;
@@ -61,11 +67,6 @@
   text-align: center;
 }
 
-
-.prices__hidden-cell {
-  display: none;
-}
-
 .prices__table-cell--width {
   max-width: 50px;
 }
@@ -77,6 +78,9 @@
   outline: 1px solid red;
   outline-offset: -1px;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 @media (min-width: @tablet-width) {

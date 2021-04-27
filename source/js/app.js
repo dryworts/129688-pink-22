@@ -20,5 +20,3 @@ mainNavToggle.addEventListener("click", function () {
   mainNavToggle.classList.toggle("main-nav__toggle--activated");
   LogoContainer.classList.toggle("page-header__logo-container--opened");
 });
-
-
