@@ -1,5 +1,85 @@
+// @media (min-width: @tablet-width) {
+//   .look-differently {
+//     display: flex;
+//     flex-direction: column;
+//     width: 300px;
+//     min-height: 97px;
+//   }
+// }
+
+// @media (min-width: @desktop-width) {
+//   .look-differently {
+//     display: none;
+//   }
+// }
+
 .look-differently__header {
   font-weight: 300;
   line-height: 29px;
+  font-size: 24px;
   text-align: center;
+  color: white;
+}
+
+@media (min-width: @tablet-width) {
+  .look-differently__header {
+    width: 300px;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 48px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .look-differently__header {
+    width: 300px;
+    font-size: 50px;
+    line-height: 68px;
+  }
+}
+
+.look-differently__hand-container {
+  background-image: url("../img/hand-mobile.png");
+  min-height: 286px;
+  background-repeat: no-repeat;
+  background-position: 0% 0%;
+}
+
+@media (min-width: @tablet-width) {
+  .look-differently__hand-container {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .look-differently__hand-container {
+    display: none;
+  }
+}
+
+
+.look-differently__wrapper {
+  //
+}
+
+
+@media (min-width: @tablet-width) {
+  .look-differently__wrapper {
+    background-image: url("../img/hand-tablet.png");
+    background-repeat: no-repeat;
+    // background-position: bottom right, 100% 100%;
+    background-position: 100% 100%;
+    background-size: 496px 545px;
+    min-height: 611px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .look-differently__wrapper {
+    background-image: url("../img/hand-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: 721px 641px;
+    min-height: 737px;
+  }
 }

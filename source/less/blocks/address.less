@@ -1,9 +1,45 @@
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
 .address p {
-  margin-top: 0;
+  // margin-top: 0;
   font-style: normal;
   font-weight: 300;
   font-size: 24px;
   line-height: 29px;
+}
+
+.address__ring {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.address__write {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.address__postal {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
 }
 
 .address__ring p,
@@ -13,6 +49,7 @@
   font-weight: bold;
   font-size: 18px;
   line-height: 25px;
+  text-align: center;
 }
 
 .address__phone a,
@@ -23,4 +60,127 @@
   font-size: 24px;
   line-height: 33px;
   color: @pink;
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .address__ring {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .address__write {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .address__postal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .address__ring {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .address__write {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+
+  .address__postal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .address {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .address__ring {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    order: 1;
+  }
+
+  .address__write {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    order: 2;
+  }
+
+  .address__postal {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    order: 3;
+  }
 }
