@@ -1,0 +1,42 @@
+.background-grey {
+  // background-color: @grey;
+  background-color: pink;
+  // margin: 0 auto;
+  width: 100%;
+}
+
+// @media (max-width: @mobile-width-only) {
+//   background-color: pink;
+//   /* margin: 0; */
+//   width: 100%;
+// }
+
+// @media (min-width: @tablet-width) {
+//   .background-grey {
+//     width: 660px;
+//     padding: 0 20px;
+//   }
+// }
+
+
+@media (min-width: @tablet-width) {
+  .background-grey--applications {
+    width: auto;
+    background-color: transparent;
+    order: -5;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .background-grey--progress {
+    width: auto;
+    background-color: transparent;
+    order: -3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .background-grey--progress {
+    //
+  }
+}
