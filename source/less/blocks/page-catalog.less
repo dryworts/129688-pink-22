@@ -2,3 +2,43 @@
   outline: 3px solid rgba(255, 0, 0, 0.5);
   outline-offset: -3px;
 }
+
+.page-catalog__wrapper {
+  position: relative;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+  background-color: transparent;
+  outline: 1px solid orange;
+}
+
+@media (min-width: @tablet-width) {
+  .page-catalog__wrapper {
+    width: 620px;
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-catalog__wrapper {
+    width: 940px;
+    // padding: 0 130px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.page-catalog__panorama {
+  position: absolute;
+  right: 0;
+  background-color: @pink;
+}
+
+.photo-of-day__panorama-header {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  padding: 13px 20px 14px 19px;
+  color: @white;
+}
