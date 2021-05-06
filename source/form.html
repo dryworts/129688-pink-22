@@ -2,40 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-
-
-    <!-- <header class="page-header header-form">
-
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="img/pink.svg" width="74" height="23" alt="PINK">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--active"><a>Главная</a></li>
-            <li class="main-nav__item"><a href="catalog.html">Фотографии</a></li>
-            <li class="main-nav__item"><a href="form.html">Конкурс</a></li>
-            <li class="main-nav__item"><a href="#">HTML Academy</a></li>
-          </ul>
-        </div>
-      </nav>
-
-      <section class="competition">
-        <div class="competition__wrapper">
-          <h1 class="competition__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </div>
-      </section>
-    </header> -->
-
     <header class="page-header header-index">
-
       <div class="page-header__wrapper"><!--центровщик-->
         <div class="page-header__logo-container">
           <a class="page-header__logo">
@@ -63,11 +35,14 @@
 
 
         </div><!--page-header__logo-container-->
+
+        <section class="competition">
+          <div class="competition__wrapper">
+            <h1 class="competition__header">Конкурс на самое безбашенное путешествие с Пинк</h1>
+          </div>
+        </section>
+
       </div> <!--конец центровщика-->
-
-
-
-
 
     </header>
 
@@ -81,10 +56,13 @@
         <h2 class="visually-hidden">Форма</h2>
         <div class="form-container__wrapper">
           <form class="form" action="https://echo.htmlacademy.ru" method="post">
-            <div class="form__description">
+
+
+
+            <div class="form__description positioner">
               <p class="form__content">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</p><p class="form__content form__content--hidden">Пожалуйста, заполните форму ниже:</p>
             </div>
-
+            <!-- дай этому блочку свойство позиционера. -->
             <fieldset class="form__full-name full-name">
               <legend class="visually-hidden">Фамилия, имя, отчество</legend>
               <p class="full-name__surname">
@@ -101,6 +79,10 @@
               </p>
             </fieldset>
 
+
+
+
+          <div class="background-grey background-grey--progress">
             <fieldset class="form__progress progress">
               <legend class="progress__title">Ваши безбашенные достижения в путешествии</legend>
               <ul class="progress__list">
@@ -148,7 +130,9 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__contacts contacts">
+          </div>
+
+            <fieldset class="form__contacts contacts positioner">
               <legend class="contacts__title">Контактная информация</legend>
               <p class="contacts__phone">
                 <label class="contacts__phone-label" for="form-phone">Номер телефона</label>
@@ -159,6 +143,9 @@
                 <input class="contacts__mail-input" id="form-mail" type="email" required name="user-mail" placeholder="Введите почту *">
               </p>
             </fieldset>
+
+
+          <div class="background-grey background-grey--applications">
             <fieldset class="form__applications applications">
               <legend class="applications__title">С какими приложениями путешествовали?</legend>
                 <ul class="applications__list">
@@ -185,14 +172,17 @@
                   </li>
                 </ul>
             </fieldset>
-            <fieldset class="form__emotions emotions">
+          </div>
+
+
+            <fieldset class="form__emotions emotions positioner">
               <legend class="emotions__title">Опишите свои эмоции</legend>
               <div class="emotions__description">
                 <label class="emotions__label visually-hidden" for="description-content">Текст письма:</label>
                 <textarea class="emotions__textarea" rows="4" cols="30" name="user-description" id="description-content" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
               </div>
             </fieldset>
-            <div class="form__button">
+            <div class="form__button positioner">
               <button class="form__button-item" type="submit">Отправить форму</button>
               <p class="form__button-description"><span class="form__button-pinkish">*</span> - Обязательные для заполнения поля</p>
             </div>
