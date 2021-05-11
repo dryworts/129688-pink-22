@@ -107,17 +107,6 @@
       </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
       <section class="custom-photos">
         <h2 class="visually-hidden">Альбом пользовательских фотографий</h2>
         <ul class="custom-photos__list">
@@ -171,27 +160,56 @@
           </li>
         </ul>
       </section>
+
       <section class="post-photo">
-        <div class="post-photo__wrapper">
+        <div class="post-photo__title-wrapper">
           <h2 class="visually-hidden">Разместите ваше фото здесь</h2>
           <p class="post-photo__title">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+
+
+        <div class="post-photo__customisation-wrapper">
           <img class="post-photo__image" src="img/photo-7-mobile.jpg" width="280" height="374" alt="Образец фото">
-          <div class="post-photo__customization customization">
-            <span class="customization__item cut-tool">
-              <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
-            </span>
-            <span class="customization__item color-tool">
-              <img src="img/fill.svg" width="44" height="44" alt="функция наполнить цветом">
-            </span>
-            <span class="customization__item brightness-tool">
-              <img src="img/contrast.svg" width="44" height="44" alt="функция установить яркость">
-            </span>
-            <input class="customization__range" type="range" min="0" max="100" step="1" value="80">
+
+
+          <div class="post-photo__right-column-wrapper">
+
+            <div class="post-photo__customization customization">
+
+              <div class="customization__range-container">
+                <span class="customization__item cut-tool">
+                  <img src="img/crop.svg" width="44" height="44" alt="функция обрезки изображения">
+                </span>
+                <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="80">
+              </div>
+
+              <div class="customization__range-container">
+                <span class="customization__item color-tool">
+                  <img src="img/fill.svg" width="44" height="44" alt="функция наполнить цветом">
+                </span>
+                <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="80">
+              </div>
+
+
+              <div class="customization__range-container">
+                <span class="customization__item brightness-tool">
+                  <img src="img/contrast.svg" width="44" height="44" alt="функция установить яркость">
+                </span>
+                <input class="customization__range customization__range--hidden" type="range" min="0" max="100" step="1" value="80">
+              </div>
+
+            </div>
+            <input class="customization__range customization__range--mobile" type="range" min="0" max="100" step="1" value="80">
             <button class="customization__button customization__button--send" type="button" aria-label="Отправить">Запостить</button>
             <button class="customization__button  customization__button--cancel" type="button" aria-label="Отменить">Отмена</button>
-          </div>
+
+          </div><!--post-photo__right-column-wrapper-->
+
+
         </div>
       </section>
+
+
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">

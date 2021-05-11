@@ -1,5 +1,15 @@
 .customization {
-  //
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+@media (min-width: @tablet-width) {
+  .customization {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .customization__item {
@@ -7,6 +17,7 @@
 }
 
 .customization__button {
+  width: 280px;
   padding: 21px 90px 21px 91px;
   font-family: inherit;
   font-style: normal;
@@ -19,4 +30,25 @@
   border-radius: 30px;
   background-color: transparent;
   cursor: pointer;
+}
+
+.customization__range--hidden {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .customization__range--hidden {
+    display: inline;
+  }
+}
+
+.customization__range--mobile {
+  width: 240px;
+  margin-left: 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .customization__range--mobile {
+    display: none;
+  }
 }

@@ -1,9 +1,40 @@
 .post-photo {
-  //
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20;
+  background-color: transparent;
+  outline: 1px solid orange;
+}
+
+@media (min-width: @tablet-width) {
+  .post-photo {
+    width: 620px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .post-photo {
+    width: 940px;
+  }
 }
 
 .post-photo__title {
   font-weight: normal;
   font-size: 14px;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .post-photo__customisation-wrapper {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+@media (min-width: @tablet-width) {
+  .post-photo__right-column-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
 }
