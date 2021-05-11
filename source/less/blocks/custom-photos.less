@@ -1,6 +1,40 @@
 .custom-photos__list {
   list-style: none;
-  margin: 0;
-  padding: 0;
   text-decoration: none;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+  background-color: transparent;
+  outline: 1px solid orange;
 }
+
+@media (min-width: @tablet-width) {
+  .custom-photos__list {
+    width: 620px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .custom-photos__list {
+    width: 940px;
+  }
+}
+
+.custom-photos__item {
+  width: 280px;
+}
+
+@media (min-width: @tablet-width) {
+  .custom-photos__item {
+    width: 300px;
+  }
+}
+
+// @media (min-width: @desktop-width) {
+//   .custom-photos__item {
+//     width: 300px;
+//   }
+// }
