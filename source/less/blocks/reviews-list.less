@@ -1,8 +1,10 @@
 
 .reviews-list__item {
-  margin-top: 0;
   display: flex;
   flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .reviews-list__item--hidden,
@@ -21,6 +23,10 @@
 
 .reviews-list__description {
   order: 1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -36,6 +42,7 @@
   line-height: 30px;
   text-align: center;
   order: 2;
+  padding-top: 34px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -51,5 +58,6 @@
 @media (max-width: @mobile-width-only) {
   .reviews-list__profession {
     order: 2;
+    display: none;
   }
 }

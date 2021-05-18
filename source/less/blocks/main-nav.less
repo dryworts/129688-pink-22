@@ -3,12 +3,14 @@
 }
 
 .main-nav__toggle--activated {
-  width: 50px;
-  height: 10px;
   display: block;
   position: absolute;
-  top: 30px;
+  top: 23px;
   right: 0;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
+  border: 0;
 }
 
 .main-nav__close {
@@ -21,8 +23,9 @@
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: 30px;
+  top: 23px;
   right: 0;
+  margin-right: 20px;
 }
 
 @media (min-width: @desktop-width) {
@@ -60,7 +63,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 32px;
+  line-height: 14px;
   // align-self: center;
   background: @basic-font;
   box-shadow: 0 1px 0 #000000, inset 0 1px 0 rgba(255, 255, 255, 0.15);
@@ -68,6 +71,7 @@
   text-align: center;
   padding-top: 25px;
   padding-bottom: 25px;
+  text-transform: uppercase;
 }
 
 @media (min-width: @desktop-width) {
