@@ -1,15 +1,28 @@
 .features {
-  outline: 3px solid rgba(0, 255, 255, 0.7);
+  outline: 3px solid purple;
   outline-offset: -3px;
   margin-top: 0;
+  // background-color: green;
 }
 
 .features__start {
   background-color: @white;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
+.features__start::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 0;
+  bottom: -47px;
+  border-top: 32px solid @white;
+  border-right: 100vw solid pink;
+}
 
 .features__content {
   margin-top: 0;
@@ -31,7 +44,7 @@
   font-size: 24px;
   line-height: 29px;
   text-align: center;
-  // padding-top: 5px;
+  padding-bottom: 15px;
 }
 
 
