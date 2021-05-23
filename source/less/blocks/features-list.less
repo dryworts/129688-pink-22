@@ -1,9 +1,15 @@
 .features-list {
   list-style: none;
-  margin: 0;
-  padding: 70px 0 0 0;
+  margin: 0 auto;
+  padding: 0;
   text-decoration: none;
-  background-color: pink;
+  // background-color: pink;
+  // position: relative;
+  background-image: url("../img/grey-background1.svg");
+  background-repeat: no-repeat;
+  // background-position: bottom center;
+  background-size: cover;
+  outline: 1px solid green;
 }
 
 .features-list__title {
@@ -36,6 +42,9 @@
   }
 }
 
+.features-list__item--top {
+  padding-top: 65px;
+}
 
 @media (min-width: @tablet-width) and (max-width: @desktop-width) {
   .features-list {
