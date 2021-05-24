@@ -3,6 +3,19 @@
   outline-offset: -3px;
   margin: 0;
   padding: 0;
+  position: relative;
+}
+
+.contact-information::after {
+  content: "";
+  position: absolute;
+  height: 123px;
+  width: 100%;
+  background-image: url("../img/triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  outline: 1px solid green;
 }
 
 .contact-information__wrapper {
