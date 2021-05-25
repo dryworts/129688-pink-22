@@ -1,3 +1,14 @@
+@media (min-width: @tablet-width) {
+  .look-differently {
+    background-image: url("../img/hand-tablet.png");
+    background-repeat: no-repeat;
+    // background-position: bottom right, 100% 100%;
+    background-position: 100% 100%;
+    // background-size: 496px 545px;
+    min-height: 619px;
+  }
+}
+
 .look-differently__header {
   font-weight: 300;
   line-height: 29px;
@@ -11,7 +22,7 @@
 
 @media (min-width: @tablet-width) {
   .look-differently__header {
-    width: 300px;
+    width: 100%;
     font-weight: 300;
     font-size: 40px;
     line-height: 48px;
@@ -46,26 +57,37 @@
 }
 
 .look-differently__wrapper {
-  //
+  // outline: 1px solid orange;
 }
 
 @media (min-width: @tablet-width) {
   .look-differently__wrapper {
-    background-image: url("../img/hand-tablet.png");
-    background-repeat: no-repeat;
-    // background-position: bottom right, 100% 100%;
-    background-position: 100% 100%;
-    background-size: 496px 545px;
-    min-height: 611px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media (min-width: @desktop-width) {
-  .look-differently__wrapper {
-    background-image: url("../img/hand-desktop.png");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    background-size: 721px 641px;
-    min-height: 737px;
-  }
-}
+// @media (min-width: @tablet-width) {
+//   .look-differently__wrapper {
+//     background-image: url("../img/hand-tablet.png");
+//     background-repeat: no-repeat;
+//     // background-position: bottom right, 100% 100%;
+//     background-position: 100% 100%;
+//     background-size: 496px 545px;
+//     min-height: 611px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-start;
+//   }
+// }
+
+// @media (min-width: @desktop-width) {
+//   .look-differently__wrapper {
+//     background-image: url("../img/hand-desktop.png");
+//     background-repeat: no-repeat;
+//     background-position: 100% 100%;
+//     background-size: 721px 641px;
+//     min-height: 737px;
+//   }
+// }

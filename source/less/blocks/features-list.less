@@ -1,5 +1,6 @@
 .features-list {
   list-style: none;
+  // width: 280px;
   margin: 0 auto;
   padding: 0;
   text-decoration: none;
@@ -10,6 +11,39 @@
   // background-position: bottom center;
   background-size: cover;
   outline: 1px solid green;
+  margin-top: -32px;
+}
+
+@media (min-width: @tablet-width) {
+  .features-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-image: url("../img/phone-tablet.png"), url("../img/grey-background1.svg");
+    background-size: 268px, cover;
+    background-repeat: no-repeat no-repeat;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.features-list__item {
+  width: 310px;
+}
+
+@media (min-width: @desktop-width) {
+  .features-list__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 .features-list__title {
@@ -22,45 +56,46 @@
   padding-top: 3px;
 }
 
+@media (min-width: @tablet-width) {
+  .features-list__title {
+    text-align: unset;
+  }
+}
+
 .features-list p {
   text-align: center;
+  width: 280px;
+  margin: 0 auto;
 }
 
-
-@media (min-width: @desktop-width) {
-  .features-list {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .features-list__item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+@media (min-width: @tablet-width) {
+  .features-list p {
+    text-align: unset;
+    width: unset;
+    margin: unset;
   }
 }
+
 
 .features-list__item--top {
-  padding-top: 65px;
+  padding-top: 100px;
 }
 
-@media (min-width: @tablet-width) and (max-width: @desktop-width) {
-  .features-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    // width: 310px;
-    background-image: url("../img/phone-tablet.png");
-    background-repeat: no-repeat;
-  }
+// @media (min-width: @tablet-width) and (max-width: @desktop-width) {
+//   .features-list {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: space-between;
+//     // width: 310px;
+//     background-image: url("../img/phone-tablet.png");
+//     background-repeat: no-repeat;
+//   }
 
-  .features-list__item {
-    align-self: flex-end;
-    width: 310px;
-  }
-}
+//   .features-list__item {
+//     align-self: flex-end;
+//     width: 310px;
+//   }
+// }
 
 @media (max-width: @desktop-width) {
   .features-list__images-item {
