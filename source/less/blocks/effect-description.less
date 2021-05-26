@@ -19,6 +19,7 @@
     justify-content: space-between;
     background-image: url("../img/clock-tablet.png");
     background-repeat: no-repeat;
+    background-position: left center;
     min-height: 330px;
   }
 
@@ -28,9 +29,36 @@
   }
 }
 
+
+.effect-description__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .effect-description__title {
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.effect-description__content {
+  //*
+}
+
+
+@media (min-width: @tablet-width) {
+  .effect-description__content {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}
+
 @media (min-width: @desktop-width) {
   .effect-description {
-
     background-image: url("../img/clock-desktop.png");
     background-repeat: no-repeat;
     min-height: 429px;
@@ -52,4 +80,8 @@
   .effect-description {
     display: none;
   }
+}
+
+.effect-description__link {
+  color: @pink;
 }
